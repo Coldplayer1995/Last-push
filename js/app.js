@@ -22,7 +22,7 @@ $(function () {
         const pushDate = $('<li>').text(pushDateData);
         const author = $('<li>').text(authorData);
         const user = $('<li>').text(userData);
-        const repoUrl = $('<li>').text(repoUrlData);
+        //const repoUrl = $('<li>').text(repoUrlData);
 
         const repoDataList = $('.repo-data');
 
@@ -30,7 +30,7 @@ $(function () {
         repoDataList.append(pushDate);
         repoDataList.append(author);
         repoDataList.append(user);
-        repoDataList.append(repoUrl);
+        //repoDataList.append(repoUrl);
 
         showbtn.addClass('hide');
         repo_info.removeClass('hide').addClass('visible');
