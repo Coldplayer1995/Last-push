@@ -1,10 +1,17 @@
 ul{
     list-style: none;
-    background: rgba(165, 243, 230, 0.979);
-    color: #fff;
+    background: rgba(191, 239, 236, 0.69);
+    color: #1f403c;
     border: 0;
+    position: relative;
+    top: 150px;
+    line-height: 1.5;
+    font-size: 1.5em;
+    float: left;
 }
-
+ul.repo-info {
+    color: #ff5a00;
+}
 
 .hide{
     display: none;
@@ -16,7 +23,7 @@ ul{
 
 .site-header {
     padding: 1em 0;
-    background: rgba(255,255,255,0.95);
+
 }
 
 .content {
@@ -32,6 +39,7 @@ ul{
     display: block;
     border: 0;
     max-width: 100%;
+    display: none;
 }
 
 .github {
@@ -43,6 +51,101 @@ ul{
 
 }
 
+.content-background{
+    background-image: url("../img/3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+
+}
 
 
+
+button {
+position: relative;
+top: 116px;
+left: 69px;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #ffffff;
+    color: #ff5a00;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+
+    transition: background 250ms ease-in-out,
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+
+
+}
+
+button:focus {
+    outline: none;
+}
+
+@keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+
+button:hover {
+    background: #ff5a00;
+    color: #ffffff;
+}
+
+
+
+button:active {
+    transform: scale(0.99);
+}
+
+
+
+p {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: animated-text 3s steps(30,end) 1s 1 normal both;
+    font-size: 28px;
+    color: #ff5a00;
+  }
+
+  button:hover p{
+      color: #ffffff;
+
+  }
+  
+  /* Animation */
+  p {
+    animation: animated-text 3s steps(30,end) 1s 1 normal both;
+  }
+
+  /* text animation*/
+
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 200px;}
+  }
 

@@ -1,4 +1,5 @@
 //dodaj meta tagi z allegro.tech
+// co zrobic zeby po kliknieciu 2x sie nie pojawialo 2x dane
 // DODAJ PAGINACJĘ
 // co jak pusta tablica albo 1????
 /*
@@ -23,8 +24,22 @@ $(function () {
 
 
     const url = "https://api.github.com/orgs/allegro/events?per_page=100";
+    //const url = "https://api.github.com/users/" + userNameVal + "/events?per_page=100";
+    //console.log(url)
+
     const showbtn = $('.show-lastPushEvent-btn');
-    const github_img = $('.github');
+    const repo_info = $('.repo-info');
+
+    const userName = $('input');
+    userName.on('change', function (params) {
+        
+    }){
+
+    }
+
+const userNameVal = $('input').val();
+
+    console.log(userNameVal)
 
     function insertEventsData(eventsData) {
 
@@ -50,11 +65,11 @@ $(function () {
         const authorData = lastPushEvent.actor.login;
 
 
-        const repoName = $('<li>').text("nazwa repozytorium: " + repoNameData);
-        const pushDate = $('<li>').text("data modyfikacji" + pushDateData);
-        const author = $('<li>').text("autor: " + authorData);
-        const user = $('<li>').text("użytkownik: " + userData);
-        const repoUrl = $('<li>').text("url repozytorium: " + repoUrlData);
+        const repoName = $('<li>').text(repoNameData);
+        const pushDate = $('<li>').text(pushDateData);
+        const author = $('<li>').text(authorData);
+        const user = $('<li>').text(userData);
+        const repoUrl = $('<li>').text(repoUrlData);
 
         //const userAvatar = $('<img>').attr('src', userAvatarData);
 
@@ -73,7 +88,7 @@ $(function () {
         repoDataList.append(repoUrl);
 
         showbtn.addClass('hide');
-        github_img.removeClass('hide').addClass('visible');
+        repo_info.removeClass('hide').addClass('visible');
 
 
         console.log(userData);
