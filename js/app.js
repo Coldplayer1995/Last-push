@@ -1,6 +1,6 @@
 $(function () {
 
-    const url = "https://api.github.com/orgs/allegro/events?per_page=100";
+    const url = "https://api.github.com/users/freeCodeCamp/events?per_page=100";
     const showbtn = $('.show-lastPushEvent-btn');
     const repo_info = $('.repo-info');
 
@@ -37,7 +37,7 @@ $(function () {
 
         console.log(userData);
         console.log(repoNameData);
-        console.log(repoUrlData);
+        //console.log(repoUrlData);
         console.log(pushDateData)
         console.log(authorData);
     }
