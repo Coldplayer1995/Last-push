@@ -1,6 +1,8 @@
-ul{
+
+
+    ul{
     list-style: none;
-    background: rgba(191, 239, 236, 0.69);
+    background: rgba(181, 226, 223, 0.78);
     color: #1f403c;
     border: 0;
     position: relative;
@@ -21,7 +23,7 @@ ul.repo-info {
     display: block;
 }
 
-.site-header {
+.app-header {
     padding: 1em 0;
 
 }
@@ -32,7 +34,7 @@ ul.repo-info {
     margin: 0 auto;
     box-sizing: border-box;
 }
-
+/*
 .logo {
     width: 203px;
     height: 40px;
@@ -41,7 +43,7 @@ ul.repo-info {
     max-width: 100%;
     display: none;
 }
-
+*/
 .github {
     width: 45px;
     height: 45px;
@@ -52,7 +54,7 @@ ul.repo-info {
 }
 
 .content-background{
-    background-image: url("../img/3.jpg");
+    background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 500px;

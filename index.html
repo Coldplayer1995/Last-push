@@ -7,21 +7,21 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="Simple app to review last code modification for github user">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
-    <header class="site-header">
+    <header class="app-header">
         <div class="content">
-
+            <img src="img/logo.svg" alt="logo" class="logo">
         </div>
     </header>
-    <section>
-
+    <section class="app-section">
         <div class="content content-background">
-                <input type="text" value="" class="user" placeholder="wpisz nazwę użytkownika github">
-            <ul class ="repo-info hide">
+
+            <ul class="repo-info hide">
                 <li>nazwa repozytorium:</li>
                 <li>data: </li>
                 <li>autor: </li>
@@ -29,16 +29,10 @@
                 <li>url repozytorium:</li>
             </ul>
             <ul class="repo-data"></ul>
-            <button class="show-lastPushEvent-btn" type="submit">
+            <button class="show-lastPushEvent-btn">
                 <p>Co nowego </br> w kodzie ?</p>
             </button>
         </div>
-
-        <!--  <img class="main-page-img" src="./img/2.png" alt="">
-        <a class="social icon-link" href="https://github.com/allegro" title="Github">
-            <img class="github hide" src="img/github.svg" alt="Github">
-        </a>-->
-
         </div>
     </section>
 
