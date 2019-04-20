@@ -1,5 +1,5 @@
 $(function () {
-
+    //url could be defined in seperate file as constant 
     const url = "https://api.github.com/users/freeCodeCamp/events?per_page=100";
     const showbtn = $('.show-lastPushEvent-btn');
     const repo_info = $('.repo-info');
@@ -22,7 +22,6 @@ $(function () {
         const pushDate = $('<li>').text(pushDateData);
         const author = $('<li>').text(authorData);
         const user = $('<li>').text(userData);
-        //const repoUrl = $('<li>').text(repoUrlData);
 
         const repoDataList = $('.repo-data');
 
@@ -30,16 +29,9 @@ $(function () {
         repoDataList.append(pushDate);
         repoDataList.append(author);
         repoDataList.append(user);
-        //repoDataList.append(repoUrl);
 
         showbtn.addClass('hide');
         repo_info.removeClass('hide').addClass('visible');
-
-        console.log(userData);
-        console.log(repoNameData);
-        //console.log(repoUrlData);
-        console.log(pushDateData)
-        console.log(authorData);
     }
 
     showbtn.on('click', function () {
